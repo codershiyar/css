@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#nav-computer{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, red,rgb(247, 86, 86))
+}
+#box-logo{
+    min-width: 30%;
+    height: 100%;
+    float: right;
+    background-color: #fafafa;
+}
+#website-name{
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+}
+#logo{
+    height: 100%;
+    border-radius: 50%;
+    float: right;
+}
+#nav-computer a{
+    color:black;
+}
+#nav-computer #nav-links{
+    width: 70%;
+    text-align: center;
+}
+
+#nav-computer #nav-links a{
+   text-decoration: none;
+   color:white;
+   font-weight: bold;
+   display: inline-block;
+}
+#nav-computer #nav-links li{
+    display: inline-block;
+    line-height: 100px;
+    min-width: 106px;
+    text-align: center;
+}
+#nav-computer #nav-links a:hover{
+    background-color: white;
+    color:black;
+    height: 100%;
+    width: 100%;
+    
+    border-bottom: 2px solid rgb(27, 27, 27);
+}
+
+
+/* 
+قم بإلغاء تعليق على  الاكواد ميديا سكرين 
+إن كنت ترغب بجعل شريط علوي متجاوب مع جميع انواع اجهزة 
+قمت بكتابة اكواد لاجلكم
+*/
+
+/* 
+@media only screen and (max-width: 720px) {
+
+    #box-logo{ display: block; width: 100%; }
+    #nav-computer #nav-links li{
+        border-bottom: 2px solid white;
+        display: block; width: 100%;
+        background-image: linear-gradient(to right, red,rgb(247, 86, 86))
+    }
+
+    #nav-computer #nav-links{ width: 100%; }
+} 
+*/
