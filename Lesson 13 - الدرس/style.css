@@ -1,0 +1,61 @@
+nav{
+   background-color: rgb(255, 112, 112);
+   height: 100px;
+}
+a{
+   display: inline-block;
+   color: white;
+   height: 40px;
+   width: 50px;
+}
+/* List of block elements - قائمة لعناصر الذي يبداون دائما بوضع افتراضي بسطر جديد
+   ---------------------------------------------------------------------------------------------
+<address>         <article>       <aside>          <blockquote>    <canvas>
+<dd>              <div>           <dl>             <dt>            <fieldset>
+<figcaption>      <figure>        <footer>         <form>          <h1>-<h6>
+<header>          <hr>            <li>             <main>          <nav>
+<noscript>        <ol>            <p>              <pre>           <section>
+<table>           <tfoot>         <ul>             <video>
+---------------------------------------------------------------------------------------------    
+List of inline elements    -   قائمة لعناصر الذي لا يبداون بسطر جديد بوضع افتراضي
+---------------------------------------------------------------------------------------------    
+<a>               <abbr>          <acronym>       <b>              <bdo>
+<big>             <br>            <button>        <cite>           <code>
+<dfn>             <em>            <i>             <img>            <input>
+<kbd>             <label>         <map>           <object>         <output>
+<q>               <samp>          <script>        <select>         <small>
+<span>            <strong>        <sub>           <sup>            <textarea>
+<time>            <tt>            <var>    
+
+/*--------------------------------------------------------------------------------------------
+display: inline; 
+لجعل عنصر من النوع الذي لايترك سطر جديد بعدها فهذا يعني لايبدا بسطر جديد بنفسه ولكن يصعب 
+   عليك تحكم بحجمها مثل تحديد عرض  او ارتفاع او مسافة بينها وبين عناصر اخرى ..إلى اخره
+/*--------------------------------------------------------------------------------------------
+display: inline-block;
+                                  لجعل عنصر من النوع الذي لا يترك سطر جديد بعدها فهذا يعني
+                              لا يبدا  بسطر جديد بنفسه ولكنها يجعل تحكم بالحجم عناصر اسهل 
+----------------------------------------------------------------------------------------------
+display: block;
+   لجعل عنصر يصبح من نوع بلوك الذي ياخذ سطر كامل وعناصر بعدها او قبلها يبداون بسطر جديد
+                                              يمكنك تحكم بحجمها وتصميمها بكامل حريتك بسهول           
+----------------------------------------------------------------------------------------------
+Compared to display: inline, the major difference is that 
+display: inline-block allows to set a width and height on the element.
+-----------------------------------------------------------------------------
+Also, with display: inline-block, the top and bottom margins/paddings are 
+respected, but with display: inline they are not.
+-----------------------------------------------------------------------------
+Compared to display: block, the major difference is that display: inline-block 
+does not add a line-break after the element, so the element can sit next to 
+other elements.
+*/
+
+
+
+
+
+
+
+
+
