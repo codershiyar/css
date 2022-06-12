@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Shiyar - Course CSS</title>
+    <style>
+        
+/* 
+margin-top:                     لإضافة مساحة  في الجهة الاعلى حول العنصر المحدد
+margin-right:                  لإضافة مساحة  في الجهة اليمين حول العنصر المحدد      
+margin-bottom:                  لإضافة مساحة  في الجهة الاسفل حول العنصر المحدد  
+margin-left:                   لإضافة مساحة في الجهة اليسار حول العنصر المحدد
+---------------------------------------------------------------------------------
+margin: top right bottom left; لإضافة مساحة حول العنصر محدد في جميع جهات بشكل مختصر
+---------------------------------------------------------------------------------
+value : القيمة 
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+inherit - specifies that the margin should be inherited from the parent element
+---------------------------------------------------------------------------------
+1 يمكن تحديد مساحة عبر احد وحدت قياس ثابتة مثل بيكسل
+2 او يمكنك عبر نسبة مئوية % وسوف يتم اضافة مساحة حسب 
+النسبة الذي تحدده و  القياس سيكون حسب حجم عرض العنصر اب
+3 او يمكنك جعل يرث القيمة من العنصر الاب عبر انهيرت 
+--------------------------------------------------------*/
+*{
+    margin: 0px;
+}
+header{
+    background-color: rgb(255, 131, 131);
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; */
+    /* margin: 20px 10px 20px 10px; */
+    margin: auto;
+    width: 320px;
+}
+
+main{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgb(43, 43, 43);
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        header
+    </header>
+
+    <main>
+        main
+    </main>
+    
+</body>
+</html>
