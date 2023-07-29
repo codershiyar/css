@@ -6,40 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn CSS with Coder Shiyar</title>
     <style>
-
 /* 
-CSS border-radius Property : 
-----------------------------------------------------------------------------
-This property allows you to add rounded corners to elements! 
-                يستخدم لقطع زوايا العنصر على شكل زوايا مستديرة او منحنية
-----------------------------------------------------------------------------
-border-radius: 1-4 length| % | initial | inherit; 
+CSS Outline : An outline is a line drawn outside the element's border.
+-----------------------------------------------------------------------
+outline-style :  يستخدم لتحديد نوع الخط الذي يتم اضافته خارج الحدود
+outline-color :                              يستخدم لتحديد اللون الخط 
+outline-width :                              يستخدم لتحديد العمق الخط 
+outline-offset:                  يستخدم لإضافة مساحة بين الخط والحدود  
+-----------------------------------------------------------------------
+CSS Outline - Shorthand property خاصية لاختصار تلك خصائص
+outline: value;
+----------------------------------------------------------------------
 */
-header{
-    background: rgb(255, 82, 82);
-    height: 200px;
-    border-radius: 10px 40px;
-}
 section{
-    width: 200px;
+    border: 2px solid rgb(255, 120, 120);
     height: 200px;
-    background-color: rgb(49, 49, 49);
-    border-radius: 50%;
-    margin-top: 10px;
+    /* outline-style: solid;
+    outline-color: rgb(56, 56, 56);
+    outline-width: 10px; */
+    outline: 10px  solid  rgb(56, 56, 56);
+    outline-offset: 1px;
 }
     </style>
 </head>
 <body>
-<header>
-</header>
+  
+    <section>
 
-<section>
-
-</section>
-
-<section>
-
-</section>
+    </section>
 
 </body>
 </html>

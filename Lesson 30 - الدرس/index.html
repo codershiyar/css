@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn CSS</title>
+<style>
+
+/*       يُستخدم فلوت لتنظيم وترتيب عناصر الواجهة في صفحة الويب عبر سماح
+                        للعنصر بالانتقال إلى اليسار أو اليمين داخل حاويته
+float: left | right | none;
+----------------------------------------------------------------------------
+Float is used to organize and arrange interface elements on a web page 
+by allowing the element to move to the left or right within its container
+----------------------------------------------------------------------------
+clear: both;                                  لتنظيف العنصر محدد من فلوت
+*/ 
+main{
+    width: 100%;
+}
+main article{
+    width: calc(100% / 2 - (1% * 2));
+    float: left;
+    min-height: 180px;
+    background-color: rgb(142, 159, 255);
+    margin: 1%;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+.clear{
+    clear: both;
+}
+main article img{
+    max-width: 100%;
+    max-height: 400px;
+}
+
+</style>
+</head>
+<body>
+  
+<main>
+    <article>
+        <img src="programmer.jpg" />
+        <p>Card Title 1</p>
+        <a href="#">Link 1</a>
+    </article>
+    <article>
+        <img src="css.jpg" />
+        <p>Card Title 2</p>
+        <a href="#">Link 2</a>
+    </article>
+    <article>
+        <img src="programmer.jpg" />
+        <p>Card Title 3</p>
+        <a href="#">Link 3</a>
+    </article>
+    <article>
+        <img src="css.jpg" />
+        <p>Card Title 4</p>
+        <a href="#">Link 4</a>
+    </article>
+    <article>
+        <img src="programmer.jpg" />
+        <p>Card Title 5</p>
+        <a href="#">Link 5</a>
+    </article>
+    <article>
+        <img src="css.jpg" />
+        <p>Card Title 6</p>
+        <a href="#">Link 6</a>
+    </article>
+    <!-- <article>article 6</article> -->
+    <!-- <p class="clear">test 1</p>
+    <p>test 2</p> -->
+</main>
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coder Shiyar (CSS)</title>
+<style>
+/* 
+::before (content:value;)  يستخدم لإضافة محتوى إضافي قبل محتوى العنصر المستهدف
+::after  (content:value;)  يستخدم لإضافة محتوى إضافي بعد محتوى العنصر المستهدف
+::first-line                  تستخدم لتحديد التنسيقات للسطر الأول في عنصر معين
+::first-letter                   تستخدم لتحديد التنسيقات لأول حرف في عنصر معين
+::selectionتستخدم لتحديد التنسيقات لنص محدد بواسطة المستخدم (عند تحديد النص)
+::placeholder                    input يستخدم لتنسيق نص في ميزة تلميح في عناصر*/  
+/* p::before{
+  content: ">>";
+} */
+p::after{
+  content: "🔥";
+}
+p::first-line{
+  font-size: 20px;
+  color: red;
+  font-weight: bolder;
+}
+p::first-letter{
+  font-size: 40px;
+}
+p::selection{
+  background-color: rgb(69, 69, 69);
+  color: white;
+}
+input::placeholder{
+  color: rgb(255, 103, 103);
+}
+</style>
+</head>
+<body>
+  <p>
+    Learn CSS in Arabic with Coder Shiyar <br>
+    Learn JavaScript in Arabic with Coder Shiyar <br>
+    Learn PHP in Arabic with Coder Shiyar<br>
+    Learn SQL in Arabic with Coder Shiyar<br>
+    Learn Python in Arabic with Coder Shiyar<br>
+  </p>
+
+  <input type="text" placeholder="ضع اسمك">
+ </body>
+</html>
+
+
+
+
+
+<!-- p::after{
+  content: "🔥";
+
+    <p>
+    Learn CSS in Arabic with Coder Shiyar <br>
+    Learn JavaScript in Arabic with Coder Shiyar <br>
+    Learn PHP in Arabic with Coder Shiyar<br>
+    Learn SQL in Arabic with Coder Shiyar<br>
+    Learn Python in Arabic with Coder Shiyar<br>
+  </p>
+
+} -->

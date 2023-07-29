@@ -1,85 +1,70 @@
 <!DOCTYPE html>
-<html lang="auto">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn CSS with Coder Shiyar</title>
+    <title>Coder Shiyar - Course CSS</title>
     <style>
+
 /* 
-Border - يستخدم لتحديد حدود العنصر المحدد الذي ترغب بتصميمه
----------------------------------------------------------------------------------
-border-width: يستخدم لتحديد العمق الحدود
-border-color: يستخدم لتحديد اللون الحدود
-border-style: يستخدم لتحديد النوع الحدود
-border: يستخدم لإختصار كتابة كود عبر تمكين كتابة تلك خصائص بسطر واحد 
-------------------------------------------
-border-top          للتحكم بالحدود الاعلى
-border-bottom       للتحكم بالحدود الاسفل
-border-right        للتحكم بالحدود الأيمن
-border-left         للتحكم بالحدود الأيسر
---------------------------------------------------------------------------------
-dotted - Defines a dotted border |                يحدد حدود بشكل منقطًا
-dashed - Defines a dashed border |               يحدد حدود بشكل متقطعًا
-solid  - Defines a solid border  |              يحدد حدود بشكل خط متصل
-double - Defines a double border |               يحدد حدود بشكل مزدوجًا   
---------------------------------------------------------------------------------
-groove - Defines a 3D grooved border  يحدد حدًا مجوفًا ثلاثي الأبعاد حسب لون حدود
-ridge - Defines a 3D ridged border    يحدد حدًا مموجًا ثلاثي الأبعاد حسب لون حدود
-inset - Defines a 3D inset border      يحدد حد داخلي ثلاثي الأبعاد حسب لون حدود
-outset - Defines a 3D outset border    يحدد حد خارجي ثلاثي الأبعاد حسب لون حدود
---------------------------------------------------------------------------------
-none - Defines no border                                             يزيل حدود
-hidden - Defines a hidden border                                     يخفي حدود
+CSS text-align Property
+------------------------------------------------------------------------------------
+text-align: left|right|center|justify|initial|inherit;
+------------------------------------------------------------------------------------
+Value	    Description	
+------------------------------------------------------------------------------------
+left	    Aligns the text to the left	   يجعل تمركز نص او محتوى في الجهة اليسار
+right	    Aligns the text to the right   يجعل تمركز نص او محتوى في الجهة اليمين
+center	    Centers the text	         يجعل تمركز نص او محتوى في المنتصف العنصر     
+------------------------------------------------------------------------------------
+                                 يستخدم لجعل نصوص يمتد بحيث يكون لكل خط عرض متساوٍ 
+justify	    Stretches the lines so that each line has equal width
+------------------------------------------------------------------------------------
+initial	    Sets this property to its default value.	قيمة افتراضية
+inherit	    Inherits this property from its parent element. وراثة قيمة من العنصر الاب
 */
-     header{
-         border-bottom: 7px solid rgb(255, 74, 74);
-     }
-     .topBorder{
-         border: none;
-         border-top: 4px solid rgb(41, 41, 41);
-     }
-    </style>
+header{
+    text-align: center;
+    background: rgb(255, 113, 113);
+    padding: 10px;
+}
+p{
+    text-align: justify;
+}
+header h3{
+    text-align: initial;
+}
+</style>
 </head>
 <body>
-  <header>
-      <h2> Coder Shiyar </h2>
-  </header>  
+   
+    <header>
+        <h3>Coder Shiyar</h3>
+        <button>button 1</button>
+        <button>button 2</button>
+        <button>button 3</button>
+    </header>
 
-<article >
-    <h3>Article 1</h3>
-    <p>Content 1</p>
-</article>
-
-
-<article  class="topBorder">
-    <h3>Article 1</h3>
-    <p>Content 1</p>
-</article>
-
-
-<article  class="topBorder">
-    <h3>Article 1</h3>
-    <p>Content 1</p>
-</article>
-
-
-<article  class="topBorder">
-    <h3>Article 1</h3>
-    <p>Content 1</p>
-</article>
-
-
-<article  class="topBorder">
-    <h3>Article 1</h3>
-    <p>Content 1</p>
-</article>
-
-
-<article  class="topBorder">
-    <h3>Article 1</h3>
-    <p>Content 1</p>
-</article>
+    <p>
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+        text text text text 
+    </p>
 
 </body>
 </html>

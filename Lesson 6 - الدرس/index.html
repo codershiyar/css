@@ -6,25 +6,44 @@
     <title></title>
     <style>
      /*    
-        element.class           لتحديد عنصر الذي يملك نفس نوع عنصر واسم كلاس الذي تحدده
-        element,element       لتحديد أكثر من عنصر بنفس الوقت  تقوم بإستخدام علامة فاصلة
-        element element                       لتحديد عناصر يتواجدون ضمن عنصر الذي تحدده 
+                .class                  يتم استخدام نقطة لتحديد عنصر عبر اسم كلاس  
+                #id                 يتم استخدام علامة # لتحديد عنصر عبر اسم اي دي
+                *                           يتم أستخدام علامة * لتحديد جميع عناصر 
+                element                          تحديد عناصر عبر تحديد اسم العنصر 
+
      */  
-        /* article.title, #text{
-            background-color: red;
-        } */
-        .title p{
-        background-color: green;    
-        }
+     *{
+         color:white;
+     }
+
+     .header{
+         background-color: green;
+         color: black;
+     }
+     #content{
+         background-color: red;
+     }
+
+
+
+     main{
+
+     }
     </style>
 </head>
 <body>
     
-    <article class="title">
-        <p> Learn Css </p>
-        <p>Test </p>
-       </article>
-    <div class="title"> text</div>
-    <p id="text">Coder Shiyar</p>
+    <header class="header">
+        Coder Shiyar
+    </header>
+
+    <main id="content" >
+        text
+    </main>
+
+    <main id="content" >
+        text
+    </main>
+
 </body>
 </html>

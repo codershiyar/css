@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coder Shiyar CSS</title>
+<style>
+/* (CSS text-spacing)
+letter-spacing:                تُستخدم لتعديل المسافات بين الحروف في النص
+This property is used to specify the space between the characters in a text.
+------------------------------------------------------------------------------
+word-spacing:                   تُستخدم لتعديل المسافات بين الكلمات في النص
+This property is used to specify the space between the words in a text.
+------------------------------------------------------------------------------
+text-indent:    تُستخدم لتعيين المسافة الأفقية بين بداية السطر وبداية النص
+This property is used to specify the indentation of the first line of a text
+------------------------------------------------------------------------------
+line-height:                            تستخدم لتعيين ارتفاع السطر في النص
+This property is used to specify the space between lines
+------------------------------------------------------------------------------
+white-space:         تُستخدم للتحكم في كيفية تعامل النص مع المسافات البيضاء
+                                      (مثل الفراغات والتباعد والأسطر الجديدة)
+This property specifies how white-space inside an element is handled.
+white-space: normal|nowrap|pre|pre-line|pre-wrap;
+------------------------------------------------------------------------------
+normal: تعامل عادي مع المسافات البيضاء والأسطر الجديدة
+nowrap: تمنع النص من الانتقال إلى سطر جديد تلقائيًا
+pre: يتم عرض النص كما هو داخل العنصر ، بما في ذلك المسافات والأسطر الجديدة
+pre-line:يحافظ على المسافات ويجعل الأسطر الجديدة ظاهرة،ولكن يتم ضغط المسافات الفارغة
+pre-wrap: يحافظ على المسافات والأسطر الجديدة ويسمح بالانتقال إلى سطر جديد  
+------------------------------------------------------------------------------
+word-wrap: تحدد سلوك تلقائياً كسر الكلمات في النص. عند تعيينها إلى 
+، يتم كسر الكلمة عند الحاجة لتناسب حجم العنصر المحتوي على النص.
+
+In CSS, the "word-wrap" property is used to set the automatic behavior of 
+word wrapping in text. When set to "break-word", words are divided at 
+the boundaries of parent elements to fit the available width.
+*/ 
+
+p{
+       background: rgb(255, 123, 123);
+       color: rgb(10, 10, 10);
+       letter-spacing: 1px;
+       word-spacing: 3px;
+       text-indent:  5%;
+       line-height: 30px;
+       white-space: pre-wrap;
+       word-wrap: break-word;
+}
+</style>
+</head>
+<body>
+
+<p>
+    This course stands out for providing 
+    comprehensive and detailed explanations 
+    of all CSS concepts,from basic propertiespropertiespropertiespropertiespropertiespropertiespropertiespropertiesproperties to advanced ideas and the 
+    latest techniques   used in designing modern web pages.
+</p>
+
+</body>
+</html>
+
+
+
+
+<!-- 
+white-space: normal|nowrap|pre|pre-line|pre-wrap;
+normal: (default) Regular handling of white spaces and line breaks.
+nowrap: Prevents the text from automatically wrapping to a new line.
+pre: Displays the text as-is inside the element, including white spaces and line breaks.
+pre-line: Preserves white spaces and makes line breaks visible, but compresses multiple consecutive white spaces.
+pre-wrap: Preserves white spaces and line breaks, allowing text to wrap to a new line when necessary. -->

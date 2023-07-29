@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn CSS with Coder Shiyar</title>
+
+<style>
+/*
+CSS Styling Lists                                تعلم تصميم قوائم ب سي اس اس
+==============================================================================
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --color1: rgb(152, 159, 255);
+  --color2: white;
+}
+ol{
+  list-style: none;
+  color: var(--color2);
+  background-color: var(--color1);
+}
+ol li, h1{
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid var(--color2);
+}
+ol li{
+  counter-increment: listCounter;
+}
+ol li::before{
+  content: counter(listCounter) ": ";
+}
+h1{
+  direction: rtl;
+}
+ol li:hover{
+  background-color: var(--color2);
+  color: var(--color1);
+}
+</style>
+
+</head>
+<body>
+  <h1>قائمة لغات البرمجة</h1>
+  <ol>
+    <li>JavaScript</li>
+    <li>PHP</li>
+    <li>SQL</li>
+    <li>Python</li>
+    <li>Java</li>
+  </ol>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+list-style-type            (list item marker  لتحديد نوع علامة عنصر القائمة)
+list-style-position: outside|inside; لتحديد تموضع علامةفي داخل او خارج عنصر  
+-->

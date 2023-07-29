@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coder Shiyar (CSS)</title>
+<style>
+
+/* 1:   :not   يسمح لك بتحديد العناصر التي لا تتطابق مع نمط محدد      
+   2:    How To Make a Pagination      كيفية إنشاء ترقيم الصفحات */
+    .pagination {
+        text-align: center;
+    }
+    
+    .pagination a {
+      display: inline-block;
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .pagination a.active {
+      background-color: #ff776e;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .pagination a:hover:not(.active) {
+      background-color: #ddd; 
+    }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+      </div>
+</body>
+</html>

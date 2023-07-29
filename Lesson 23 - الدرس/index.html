@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="auto">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +7,79 @@
     <title>Learn CSS with Coder Shiyar</title>
     <style>
 /* 
-CSS Outline : An outline is a line drawn outside the element's border.
------------------------------------------------------------------------
-outline-style :  يستخدم لتحديد نوع الخط الذي يتم اضافته خارج الحدود
-outline-color :                              يستخدم لتحديد اللون الخط 
-outline-width :                              يستخدم لتحديد العمق الخط 
-outline-offset:                  يستخدم لإضافة مساحة بين الخط والحدود  
------------------------------------------------------------------------
-CSS Outline - Shorthand property خاصية لاختصار تلك خصائص
-outline: value;
-----------------------------------------------------------------------
+Border - يستخدم لتحديد حدود العنصر المحدد الذي ترغب بتصميمه
+---------------------------------------------------------------------------------
+border-width: يستخدم لتحديد العمق الحدود
+border-color: يستخدم لتحديد اللون الحدود
+border-style: يستخدم لتحديد النوع الحدود
+border: يستخدم لإختصار كتابة كود عبر تمكين كتابة تلك خصائص بسطر واحد 
+------------------------------------------
+border-top          للتحكم بالحدود الاعلى
+border-bottom       للتحكم بالحدود الاسفل
+border-right        للتحكم بالحدود الأيمن
+border-left         للتحكم بالحدود الأيسر
+--------------------------------------------------------------------------------
+dotted - Defines a dotted border |                يحدد حدود بشكل منقطًا
+dashed - Defines a dashed border |               يحدد حدود بشكل متقطعًا
+solid  - Defines a solid border  |              يحدد حدود بشكل خط متصل
+double - Defines a double border |               يحدد حدود بشكل مزدوجًا   
+--------------------------------------------------------------------------------
+groove - Defines a 3D grooved border  يحدد حدًا مجوفًا ثلاثي الأبعاد حسب لون حدود
+ridge - Defines a 3D ridged border    يحدد حدًا مموجًا ثلاثي الأبعاد حسب لون حدود
+inset - Defines a 3D inset border      يحدد حد داخلي ثلاثي الأبعاد حسب لون حدود
+outset - Defines a 3D outset border    يحدد حد خارجي ثلاثي الأبعاد حسب لون حدود
+--------------------------------------------------------------------------------
+none - Defines no border                                             يزيل حدود
+hidden - Defines a hidden border                                     يخفي حدود
 */
-section{
-    border: 2px solid rgb(255, 120, 120);
-    height: 200px;
-    /* outline-style: solid;
-    outline-color: rgb(56, 56, 56);
-    outline-width: 10px; */
-    outline: 10px  solid  rgb(56, 56, 56);
-    outline-offset: 1px;
-}
+     header{
+         border-bottom: 7px solid rgb(255, 74, 74);
+     }
+     .topBorder{
+         border: none;
+         border-top: 4px solid rgb(41, 41, 41);
+     }
     </style>
 </head>
 <body>
-  
-    <section>
+  <header>
+      <h2> Coder Shiyar </h2>
+  </header>  
 
-    </section>
+<article >
+    <h3>Article 1</h3>
+    <p>Content 1</p>
+</article>
+
+
+<article  class="topBorder">
+    <h3>Article 1</h3>
+    <p>Content 1</p>
+</article>
+
+
+<article  class="topBorder">
+    <h3>Article 1</h3>
+    <p>Content 1</p>
+</article>
+
+
+<article  class="topBorder">
+    <h3>Article 1</h3>
+    <p>Content 1</p>
+</article>
+
+
+<article  class="topBorder">
+    <h3>Article 1</h3>
+    <p>Content 1</p>
+</article>
+
+
+<article  class="topBorder">
+    <h3>Article 1</h3>
+    <p>Content 1</p>
+</article>
 
 </body>
 </html>

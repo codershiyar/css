@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coder Shiyar (CSS)</title>
+<style>
+
+/* =============================================================================
+1:box-shadow: offset-x offset-y blur-radius spread-radius color; 
+to add shadow to the element's box           تستخدم لإضافة ظل لصندوق العنصر   */
+.box-shadow{
+ box-shadow: 10px 10px 5px 2px rgb(242, 218, 218); 
+}
+
+/*==============================================================================
+2:text-shadow: offset-x offset-y blur-radius color;
+to add shadow to the text inside the element  تستخدم لإضافة ظل لنص داخل العنصر */
+header{
+  text-shadow: 4px 3px 4px rgb(255, 67, 67);
+  margin-bottom: 10px;
+}
+/*==============================================================================
+3:box-shadow: inset offset-x offset-y blur-radius spread-radius color;
+shadow inside element  لتحديد أن الظل يجب أن يظهر داخل العنصر بدلاً من الخارج*/
+.box-shadow-inset{
+  box-shadow: inset 5px 5px 0px 2px rgb(255, 65, 65); 
+}
+/*==============================================================================
+4:filter: drop-shadow(offset-x offset-y blur-radius color);
+           تمنحك إمكانية إضافة ظل مظهرًا ثلاثي الأبعاد للعنصر، بما في ذلك النص    
+to add a three-dimensional appearance drop shadow to the element, including text*/
+.box-shadow-img{
+  box-shadow: 5px 5px rgb(255, 65, 65);
+}
+.drop-shadow-img{
+  filter: drop-shadow(1px 1px 1px rgb(255, 65, 65));
+}
+    </style>
+</head>
+<body>
+
+  <header class="box-shadow">
+    header element
+  </header>
+
+  <div class="box-shadow-inset">
+    div element
+  </div>
+
+  <img class="box-shadow-img" src="icon-book.png" width="45%"/>
+  <img class="drop-shadow-img" src="icon-book.png" width="45%"/>
+</body>
+</html>
+
+
+<!-- 
+offset-x (الإزاحة الأفقية):    ينقل الظل إلى اليمين عندما تكون القيمة إيجابية
+                                                  وإلى اليسار عندما تكون سلبية
+Horizontal shadow position (positive moves right, negative moves left).
+---------------------------------------------------------------------------------
+offset-y (الإزاحة العمودية):   ينقل الظل إلى الأسفل عندما تكون القيمة إيجابية
+                                                 ، وإلى الأعلى عندما تكون سلبية
+Vertical shadow position (positive moves downwards, negative moves upwards).
+---------------------------------------------------------------------------------
+blur-radius (شدة التمويه):يحدد مقدار التمويه الضبابي للظل. كلما زادت القيمة 
+                                  زاد تمويه الظل، وكلما قلت القيمة، قل تمويهه
+Shadow blur intensity (higher values increase blur).                                  
+---------------------------------------------------------------------------------
+spread-radius (التمدد):             تُستخدم لتعديل حجم الظل المُضاف إلى العنصر
+Shadow size adjustment (positive expands, negative contracts).
+---------------------------------------------------------------------------------
+color(اللون):                                            تُستخدم تحديد لون الظل   
+---------------------------------------------------------------------------------
+-->

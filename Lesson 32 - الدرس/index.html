@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coder Shiyar (CSS)</title>
+<style>
+/* 
+:hover                          تُطبق على العنصر عندما يتم تمرير المؤشر فوقه
+Is applied to an element when the pointer is moved over it.
+------------------------------------------------------------------------------
+:focus تُطبق عندما يتم تحديد العنصر بواسطة المستخدم،مثل تحديد حقل إدخال نص
+Is applied when the element is selected by the user,such as a text input field
+------------------------------------------------------------------------------
+:active                                           عندما يتم النقر على العنصر  
+Is applied when the element is clicked on.
+------------------------------------------------------------------------------
+cursor:                يُستخدم لتعيين شكل المؤشر عند ذهاب به إلى فوق العنصر
+Is used to set the shape of the pointer when it is moved over the element.
+------------------------------------------------------------------------------*/
+img:hover{
+    opacity: 0.5;
+    cursor:pointer;
+}
+input:focus{
+    width: 100%;
+}
+img:active{
+    width: 120%; 
+}
+</style>
+</head>
+<body>
+    <img src="css.jpg" width="100%" />
+    <input type="text">
+</body>
+</html>

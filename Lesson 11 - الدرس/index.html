@@ -6,83 +6,52 @@
     <title>Coder Shiyar</title>
     <style>
 /* 
-background-attachment: fixed, scroll , local , initial , inherit; 
-scroll :                 سيتم تمرير صورة الخلفية مع الصفحة. هذا هو الافتراضي
-fixed  :                         لجعل صورة خلفية ثابتة بمكانه عند عمل سكرول
-local  :                          سيتم تمرير صورة الخلفية مع محتويات العنصر
-initial :                                    لحذف تلك خاصية من العنصر المحدد
-inherit : لجعل العنصر المحدد يرث ذلك خاصية من العنصر الاب إن كان الأب يملكها
---------------------------------------------------------------------------------
-
+background-position: x% y%; القيمة الأولى هي الوضع الأفقي والقيمة الثانية هي القيمة الوضع عامودي
+left :            لجعل تموضع في الجهة اليسار
+right :           لجعل تموضع في الجهة اليمين
+center :        لجعل تموضع في المنتصف العنصر
+top :       لجعل تموضع العنصر في الجهة الأعلى
+bottom :         لجعل تموضع في الجهة المنتصف
+The first value is the horizontal position and the second value is the vertical.
+min-height: 100vh; حد الأدنى للارتفاع العنصر
+calc() لعمل عمليات حسابية في سي اس اس
 */
-
-/* div{
-    height: 80px;
-} */
-
-/* header , main{
-    background: url(img1.png) ;
-    background-repeat: no-repeat;
-    background-size: 200px;
-    background-position: top ;
-    max-height: 300px;
-    overflow: scroll;
+body{
+    height: 1px;
+    min-height: calc(100vh - 20px) ;
 }
-main{
-    background-attachment: local;
-}
-
-main{
-    background-attachment: initial;
-} */
 header{
-    background: url(img1.png) ;
+    background-color: rgb(255, 109, 109);
+    height: 10%;
+}
+
+main{
+    background-image: url(img1.png);
     background-repeat: no-repeat;
     background-size: 200px;
-    background-position: top  ;
-    height: 200px;
-    background-color: rgb(109, 109, 109);
-    background-attachment: fixed;
+    background-position: center center;
+    background-color: rgb(61, 61, 61);
+    height: 80%;
 }
-main{
-    background-color: rgb(226, 225, 225);
-    height: 800px;
+footer{
+    background-color: rgb(255, 255, 255);
+    height: 10%;
 }
     </style>
 </head>
 <body>
 
-    <header>
+  <header>
 
-    </header>
+  </header>
 
-    <main>
+  <main>
 
-    </main>
-    <!-- <header>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-    </header>
+  </main>
 
-    <main>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-        <div>I like CSS - انا احب سي اس اس</div>
-    </main> -->
+  <footer>
 
+  </footer>
 
 </body>
 </html>

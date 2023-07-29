@@ -5,52 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coder Shiyar - Course CSS</title>
     <style>
+
 /* 
-padding-top:                     لإضافة مساحة إضافية  في الجهة الاعلى العنصر المحدد
-padding-right:                  لإضافة مساحة إضافية  في الجهة اليمين العنصر المحدد      
-padding-bottom:                  لإضافة مساحة إضافية  في الجهة الاسفل العنصر المحدد  
-padding-left:                   لإضافة مساحة إضافية  في الجهة اليسار العنصر المحدد
----------------------------------------------------------------------------------
-padding: top right bottom left;     لإضافة مساحة اضافية لجميع جهات بشكل مختصر
----------------------------------------------------------------------------------
-value : القيمة 
-length - specifies a padding in px, pt, cm, etc.
-% - specifies a padding in % of the width of the containing element
-inherit - specifies that the padding should be inherited from the parent element
----------------------------------------------------------------------------------
-1 يمكن تحديد مساحة عبر احد واحدت قياس ثابتة مثل بيكسل
-2 او يمكنك عبر نسبة مئوية % وسوف يتم اضافة مساحة حسب 
-النسبة الذي تحدده و  القياس سيكون حسب حجم عرض العنصر اب
-3 او يمكنك جعل يرث القيمة من العنصر الاب عبر انهيرت 
---------------------------------------------------------*/
-*{
-    padding: 0px;
-}
-header section{
-    background-color: rgb(241, 90, 90);
-    
-    /* padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;  */
-   padding: 20px 20px ;
-}
+height                   لتحديد حجم الارتفاع العنصر المحدد
+max-height لتحديد الحد الأقصى للحجم الارتفاع العنصر المحدد 
+min-height لتحديد الحد الادنى للحجم الارتفاع العنصر المحدد
+إذا كان الارتفاع: تلقائي ؛ سيقوم العنصر تلقائيًا بضبط ارتفاعه للسماح بعرض محتواه بشكل صحيح.
+---------------------------------------------------------
+height: auto|value|initial|inherit;
+max-height: auto|value|initial|inherit;
+min-height: auto|value|initial|inherit;
 
+If height: auto; the element will automatically adjust its height to allow its content to be displayed correctly.
+--------------------------------------------------------
+*/
+body{
+    height: 600px;
+}
 header{
-    width: 95%;
-    padding-right: 5%;
-    background-color: rgb(46, 46, 46);
+    /* height: inherit;
+    max-height: 300px; */
+    min-height: 100px;
+    background-color: rgb(238, 86, 86);
 }
-
+a{
+    display: inline-block;
+    height: 100px;
+    background-color: rgb(82, 81, 81);
+    color: white;
+}
+main{
+    height: 100px;
+    background-color: rgb(53, 121, 248);
+}
     </style>
 </head>
 <body>
-
+    
 <header>
- <section>
-     section
- </section>
+
 </header>
+
+
+<main>
+<article>1</article>
+<article>2</article>
+<article>3</article>
+</main>
+
+<a href="">learn css</a>
 
 </body>
 </html>

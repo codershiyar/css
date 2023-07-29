@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coder Shiyar (CSS)</title>
+<style>
+/* 
+CSS buttons: Basic Button Styling تعلم تصميم أزرار وروابط ب سي اس اس
+------------------------------------------------------------------------
+background-color                        لتحديد خلفية العنصر بلون محدد
+border                                            لتحكم بالحدود العنصر
+color                                      لتحديد لون النص داخل العنصر
+padding/margin                    لتحكم بالهامش/مساحةاضافية حول محتوى
+text-align                                      لتحكم بالتمركز المحتوى
+text-decoration                 لتحكم بالتزيينات عن النص، مثل التسطير
+font-size                                         لتحديد حجم الخط للنص   
+display: inline-block;           a لتمكين التحكم في عرض وارتفاع عناصر 
+border-radius                                       لإضافة زوايا مستديرة 
+:hover                          لإضافة خصائص عندما يكون ماوس على العنصر
+float:value;     لجعل ازرار يكونون بجانب بعضهم ان كان هناك مسافة لذلك
+cursor: pointer;  لجعل مؤشر الماوس يشبه كا اصبع عندما يكون على العنصر
+------------------------------------------------------------------------
+Colors(الوان قد تعجبك)Black #555555 Gray #e7e7e7 Red #f44336 Blue #008CBA*/
+.btn{
+  width: calc(100%/3 - 1px * 3 );
+  border: none;
+  padding: 14px 0px;
+  font-size: 18px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration:none;
+  margin: 4px 0px;
+  text-align: center;
+}
+.btn:hover{cursor: pointer;}
+.btn-red{ background-color: #f44336;color: white;}
+.btn-red:hover{background-color:white;color:#f44336;border:2px solid#f44336;}
+.btn-blue{background-color: #008CBA;color: white;}
+.btn-black{background-color: rgb(36, 36, 36);color: white;}
+.btn-gray{background-color: #e7e7e7;color: black;}
+.btn-block-group  .btn{
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<div>
+      <button class="btn btn-red">option1</button>
+      <button class="btn btn-gray">option2</button>
+      <a class="btn btn-black" href="#">Link</a>
+</div>
+
+<div class="btn-block-group">
+  <a class="btn btn-gray" href="#">Link</a>
+  <a class="btn btn-gray" href="#">Link</a>
+  <a class="btn btn-gray" href="#">Link</a>
+  <a class="btn btn-gray" href="#">Link</a>
+  <a class="btn btn-gray" href="#">Link</a>
+  <a class="btn btn-gray" href="#">Link</a>
+  <a class="btn btn-gray" href="#">Link</a>
+</div>
+ </body>
+</html>
+

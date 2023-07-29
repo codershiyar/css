@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coder Shiyar (CSS)</title>
+<style>
+/* 
+CSS Variable(used to store and reuse values)يستخدم لتخزين قيم وإعادة استخدامها 
+---------------------------------------------------------------------------------
+How to create a variabel in CSS   طريقة إنشاء اسماء/متغيرات لتخزين بيانات بها
+--variable-name:value; 
+var(--variable-name)                How to use it                 طريقة استخدام   
+----------------------------------------------------------------------------------
+counter()                   لإنشاء عدادت وإطاحة تعقب وعرض عدد الظهور لعنصر معين
+counter-increment                                             لزيادة قيمة العداد
+counter-reset                                                      لتصفير العداد
+*/
+:root{
+  --blue: rgb(44, 115, 255);
+  --white: rgb(255, 252, 252);
+}
+body{
+  background: var(--blue);
+}
+p{
+  background: var(--white);
+  color: var(--blue);
+  font-size: 20px;
+  padding: 10px;
+}
+ol{
+  counter-reset: my-counter -1;
+}
+ol li{
+  counter-increment: my-counter;
+  list-style: none;
+  font-size: 17px;
+}
+ol li::before{
+  content: counter(my-counter) ": ";
+  color: var(--white);
+}
+
+</style>
+</head>
+<body>
+  <ol>
+    <li>Learn CSS in Arabic with Coder Shiyar</li>
+    <li>Learn JavaScript in Arabic with Coder Shiyar</li>
+    <li>Learn PHP in Arabic with Coder Shiyar</li>
+    <li> Learn SQL in Arabic with Coder Shiyar</li>
+    <li>Learn Python in Arabic with Coder Shiyar</li>
+  </ol>
+
+  <p> </p>
+
+ </body>
+</html>
+
