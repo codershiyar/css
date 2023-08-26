@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>تصميم جدول بشكل جذاب</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* 
+CSS Table Styling                تعلم تصميم جدول إحترافي بسهولة ب سي إس إس   
+------------------------------------------------------------------------------ 
+*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    direction: rtl;
+}
+table tbody tr:nth-child(even){background-color: #f2f2f2}
+table td, table th{
+    padding: 14px;
+}
+thead{
+    background-color: #9fa1ff;
+    color: white;
+}
+table thead th{
+    border-bottom: 3px solid white;
+}
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr><th colspan="3">العنوان الجدول</th></tr>
+            <th>العنوان العامود 1</th>
+            <th>العنوان العامود 2</th>
+            <th>العنوان العامود 3</th>
+        </thead>
+    
+      <tr>
+        <td>محتوى الخلية 1-1</td>
+        <td>محتوى الخلية 1-2</td>
+        <td>محتوى الخلية 1-3</td>
+      </tr>
+      <tr>
+        <td>محتوى الخلية 2-1</td>
+        <td>محتوى الخلية 2-2</td>
+        <td>محتوى الخلية 2-3</td>
+      </tr>
+      <tr>
+        <td>محتوى الخلية 3-1</td>
+        <td>محتوى الخلية 3-2</td>
+        <td>محتوى الخلية 3-3</td>
+      </tr>
+    </table>
+</body>
+</html>
+
+
+
+<!--
+/*   
+:nth-child(even)    لاستهداف العناصر التي تحمل ترتيبًا زوجيًا داخل عنصر والده
+:nth-child(odd)    لاستهداف العناصر التي تحمل ترتيبًا الفردي داخل عنصر والده 
+:last-child                   لاستهداف آخر عنصر من فئة محددة داخل عنصر والده 
+:first-child                  لاستهداف اول عنصر من فئة محددة داخل عنصر والده 
+border-collapse: collapse;                                 لدمج حدود بين خلايا */
+table{
+    border-collapse: collapse;
+}
+table tr:nth-child(even){
+    background-color: rgb(255, 197, 197);
+}table tr:nth-child(odd){
+    background-color: rgb(196, 196, 196);
+}
+table tr th:last-child{
+    background-color: aliceblue;
+}
+table tr th:first-child{
+    background-color: aliceblue;
+} -->

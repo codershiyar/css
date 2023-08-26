@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Flex Box</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* 
+========================= CSS Flex Container Properties ========================
+1: display:flex | inline-flex;  flexible */ 
+.flex-container{
+    display: flex;
+    background-color:DodgerBlue ;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* min-height: 400px;
+    align-items: stretch; */
+    /* align-content: space-between; */
+} .flex-container img{
+    background-color: rgb(255, 255, 255);
+    margin: 10px 10px;
+    padding: 10px;
+    /* flex-basis: calc(20% - 40px); */
+    width:calc(25% - 40px) ;
+}
+</style>
+</head>
+<body>
+
+<section class="flex-container">
+    <img src="img1.png"/>
+    <img src="img1.png"/>
+    <img src="img1.png"/>
+    <img src="img1.png"/>
+    <img src="img1.png"/>
+    <img src="img1.png"/>
+    <img src="img1.png"/>
+    <img src="img1.png"/>
+     <!-- <div  style="order:4; align-self: flex-end;">item1</div>
+     <div style="order:2">item2</div>
+     <div  style="order:3">item3</div>
+     <div  style="order:1">item4</div>
+     <div  style="order:5">item5</div>
+     <div  style="order:6">item6</div>
+     <div  style="order:7">item7</div>
+     <div  style="order:8">item8</div> -->
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- #F45B69  #fefefe   DodgerBlue-->
+
+
+
+
+
+
+
+
+
+<!-- 
+========================= CSS Flex Container Properties ========================
+1: display:flex | inline-flex;
+-------------------------------------------------------------------------------
+2: flex-direction: row | row-reverse | column | column-reverse;
+-------------------------------------------------------------------------------
+3: flex-wrap: nowrap | wrap | wrap-reverse;
+-------------------------------------------------------------------------------
+4: justify-content: flex-start | flex-end | center | space-between |
+                    space-around | space-evenly ...;
+-------------------------------------------------------------------------------                    
+5: align-items: stretch | flex-start | flex-end | center | baseline  ...;
+-------------------------------------------------------------------------------
+6: align-content: flex-start|center|flex-end|space-between|space-around|stretch;
+
+========================== CSS Flex Items Properties ===========================
+1: order: position(1,2,3...)
+2: flex-basis: value (px | % ....);  -->

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 90px minmax(400px, auto) ;
+        gap: 20px 20px;
+    }
+    header{
+        grid-column: 1 / span 3;
+        background-color: #ffe2f2;
+    }
+    aside, main, footer{
+        background: #e7e6fd;
+    }
+    @media screen and (max-width: 900px) {
+        .grid-container{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 90px minmax(400px, auto) minmax(200px, auto) ;
+
+        }    
+        header,footer{ grid-column: 1 / span 2;}
+}  @media screen and (max-width: 600px) {
+    .grid-container{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 90px minmax(400px, auto) minmax(200px, auto) minmax(100px, auto) ;
+
+        } 
+        main{
+            grid-row: 2;
+        }
+        header,footer{ grid-column: 1;}   
+        /* footer{
+            min-height: 100px;
+        } */
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <header></header>
+    <aside>aside</aside>
+    <main>main</main>
+    <footer>footer</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- /* minmax(minValue,maxValue)تستخدم لتحديد الحد الأدنى والحد الاقصى لحجم ما
+   repeat()          تستخدم لتكرار قيمة معينة عددًا محددًا من المرات     */ -->

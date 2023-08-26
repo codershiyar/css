@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS Position Property</title>
+    <style>
+        main{
+            /* bottom: -50px; */
+            position: relative;
+            background-color:  #ffe2f2;
+            height: 600px;
+
+        }
+        header{
+            position: fixed;
+            background-color:  #e7e6fd;
+            bottom: 10px;
+            z-index: 1;
+        }
+        img{
+            position: absolute;
+            z-index: 2;
+            top: 20px;
+            left: 0;
+            height: 300px;
+        }
+        menu{
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top:0px;
+            z-index: 3;
+        }
+    </style>      
+</head>
+<body>
+
+    <header>header - قسم العلوي</header>
+    <menu>Menu - ضع الشريط التنقل هنا</menu>
+    <main>main - ضع محتوى هنا  
+        <img src="img2.jpg"/>
+    </main>
+
+    <footer>footer - قسم السفلي</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- #e7e6fd  #ffe2f2 -->
+
+
+
