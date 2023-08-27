@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS Transition Property</title>
+    <style>
+/* 
+CSS Transition                         تسمح لك بجعل تغييرات في مظهر عنصر ويب
+تحدث على مدى فترة زمنية محددة بدلاً من شكل فوري
+CSS transitions allows you to change property values smoothly over given duration
+---------------------------------------------------------------------------------
+transition-property:لتحديد الخصائص التي ترغب بتطبيق عليها(مثل اللون أوالحجم)
+transition-duration:                 لتحديد كم سيستغرق من البداية إلى النهاية
+transition-timing-function:         لتحديد كيف ستحدث سرعة التغيير خلال الانتقال
+transition-delay:                     لإضافة التأخير قبل بدء عملية اضافة خصائص
+---------------------------------------------------------------------------------
+transition:                                         لإختصار كتابة جميع تلك خصائص 
+*/
+*{font-size: 18px;}
+header{
+    background: rgb(255, 67, 67); 
+    color: white;    padding: 40px;
+    /* transition-property: background;
+    transition-duration: 0.5s; */
+    /* transition-delay: 2s; */
+    /* transition-timing-function:ease; */
+    height: 30px;
+    transition: background 0.5s, height 1s;
+}
+header:hover{background: rgb(115, 115, 115);height: 200px;}
+img{width: 110px;transition: width 1s;}
+img:hover{ width: 100%;}
+div {
+  width: 100px; padding: 30px;
+  margin-bottom: 20px;
+  background: rgb(44, 44, 44); color: white;
+  transition: width 1s;
+}
+/* 
+ease (الافتراضي): تبدأ بسرعة بطيئة، ثم تسرع أكثر أثناء التقدم في الانتقال، وتبطئ قبل الانتهاء.
+linear: تغيير مستمر بنفس السرعة طوال مدة الانتقال.
+ease-in: تبدأ ببطء وتتسارع أكثر عند الاقتراب من نهاية الانتقال.
+ease-out: تبدأ بسرعة وتتباطأ تدريجياً نحو نهاية الانتقال.
+ease-in-out: تبدأ وتنتهي ببطء، وفي منتصف الانتقال تتسارع. */
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+div:hover {
+  width: 300px;
+}
+</style>      
+</head>
+<body>
+<header>header</header>
+
+<main>
+<img src="img2.jpg"/>
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- #e7e6fd  #ffe2f2 -->
+
+
+

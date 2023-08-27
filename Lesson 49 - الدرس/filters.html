@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:white;
+}
+img {
+  width: 33%;
+  height: auto;
+  float: left; 
+  max-width: 235px;
+}
+/* 
+none: لا تطبق تعديلات.
+blur(): يضبّب العنصر.
+brightness(): يجعل العنصر أكثر إشراقًا أو أقل.
+contrast(): يجعل العنصر أكثر تباينًا أو أقل.
+drop-shadow(): يضيف ظل للعنصر.
+grayscale(): يحوّل العنصر إلى أبيض وأسود.
+hue-rotate(): يدور لون العنصر.
+invert(): يعكس الألوان.
+opacity(): يعدّل شفافية العنصر.
+saturate(): يجعل الألوان أكثر تشبعًا أو أقل.
+sepia(): يعطي تأثير السيبيا (ألوان بنية). 
+*/
+
+.blur {filter: blur(4px);}
+.brightness {filter: brightness(250%);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}
+
+</style>
+</head>
+<body>
+
+<h2>Image Filters</h2>
+
+<p><strong>Note:</strong> The filter property is not supported in Internet Explorer or Edge 12.</p>
+
+<img src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="blur" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="brightness" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="contrast" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="grayscale" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="huerotate" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="invert" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="opacity" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="saturate" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="sepia" src="logo.jpg" alt="Pineapple" width="300" height="300">
+<img class="shadow" src="logo.jpg" alt="Pineapple" width="300" height="300">
+
+</body>
+</html>
+
+

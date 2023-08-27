@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS OverFlow and Resize Properties</title>
+    <style>
+/* 
+overflow (أوفرفلو):  يُستخدم للتحديد ماذا يحدث عندما يكون محتوى عنصر ما 
+                        أكبر بكثير من المساحة المخصصة له ضمن العنصر الأم 
+visible(Default - افتراضي):               يُظهر المحتوى خارج حدود العنصر
+hidden:                                              يُخفي المحتوى الزائد
+clip:                     يقوم بقص الجزء الزائد المتجاوز للحدود العنصر
+scroll:                                         يُعرض شريط التمرير للتنقل
+auto:                                   يُظهر شريط التمرير فقط عند الحاجة
+===========================================================================
+text-overflow(تكست أوفرفلو): يُستخدم للتعامل مع النص الزائد الذي يتجاوز 
+                                                              حدود العنصر                
+clip:                                           يقص الجزء الزائد من النص
+ellipsis:               يُعرض نقطتين (العلامة التالية: ...) في نهاية النص
+==========================================================================
+resize: none|both|horizontal|vertical;     
+                        تحدد ما إذا كان يمكن للمستخدم تغيير حجم العنصر 
+overflow:visible;       لا تنطبق على العناصر من نوع إينلاين او الذي يملك              
+inline
+*/
+.overflow-example{
+    height: 50px;
+    background-color:#ffc261 ;
+    overflow: auto;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+}
+.text-overflow-example{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.resize-example{
+  resize: horizontal;
+  overflow: auto;
+}
+</style>      
+</head>
+<body>
+    <p class="resize-example">
+        <b>Resize Example</b> <br>
+        CSS, or Cascading Style Sheets,  is a web design language for
+        enhancing page appearance through fonts, colors, layout, and more. 
+    </p>
+
+    <p class="overflow-example">
+        CSS, or Cascading Style Sheets,  is a web design language for
+        enhancing page appearance through fonts, colors, layout, and more. 
+        It complements HTML and enables precise control over visual elements.
+    </p>
+
+    <p class="text-overflow-example">
+        <b>Text Overflow Example</b> <br>
+        CSS, or Cascading Style Sheets,  is a web design language for
+        enhancing page appearance through fonts, colors, layout, and more. 
+    </p>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- #e7e6fd  #ffe2f2 -->
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS Filter & Object Fit And Position Properties</title>
+<style>
+/* 
+object-fit:  تحديد كيفية تغيير حجم صور أو فيديو ليناسب المساحة المحددة له   
+used to specify how an <img> or <video> should be resized to fit its container
+-----------------------------------value-قيم------------------------------------
+fill:       تمتلأ الصورة بالكامل في المكان حتى لو تغيرت نسبة طول وعرض الصورة
+contain:               تكبر الصورة أو المحتوى حتى يكون كله مرئيًا دون أن يُشوه
+cover:                  تُظهر جزءًا مهمًا من الصورة بحيث تملأ المكان دون أن تُشوه
+none:                                               تعرض الصورة بالحجم الطبيعي
+scale-down: 
+تظهر الصورة بحجمها الطبيعي إذا كان أصغر من المكان، وإلا فستُقلص لتناسب المكان
+---------------------------------------------------------------------------------
+object-position:    
+Used to specify how an <img> or <video> should be positioned within its container
+object-position: (horizontal position) vertical position | default 50% 50%
+---------------------------------------------------------------------------------
+filter (فلتر):       هذه الخاصية تمكّنك من تغيير مظهر الصور أو العناصر الأخرى
+                                   مثل التغييرات في اللون والتباين والضبابية
+CSS filter property adds visual effects (like blur and saturation) to an element
+blur(): يضبّب العنصر.
+brightness(): يجعل العنصر أكثر إشراقًا أو أقل.
+contrast(): يجعل العنصر أكثر تباينًا أو أقل.
+drop-shadow(): يضيف ظل للعنصر.
+grayscale(): يحوّل العنصر إلى أبيض وأسود.
+hue-rotate(): يدور لون العنصر.
+invert(): يعكس الألوان.
+opacity(): يعدّل شفافية العنصر.
+saturate(): يجعل الألوان أكثر تشبعًا أو أقل.
+sepia(): يعطي تأثير السيبيا (ألوان بنية). 
+*/
+img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 60% 40% ;
+    filter: brightness(110%);
+}
+
+</style>      
+</head>
+<body>
+    <img src="img2.jpg" />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- #e7e6fd  #ffe2f2 -->
+
+
+
