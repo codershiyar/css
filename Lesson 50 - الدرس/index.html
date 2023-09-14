@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS Box-Sizing and clip-path</title>
+<style>
+/* 
+box-sizing:                   تستخدم لتحديد كيف يتم حساب الطول والعرض العنصر
+                 بشكل افتراضي، يتم حساب عرض وارتفاع العنصر بالطريقة التالية
+width + padding + border = actual width of an element                    
+                               العرض + الهامش + الحدود = العرض الفعلي للعنصر
+height + padding + border = actual height of an element
+                           الارتفاع + الهامش + الحدود = الارتفاع الفعلي للعنصر
+-------------------------------------------------------------------------------
+The box-sizing property allows us to include the padding and border in an 
+element's total width and height.
+border-box: تسمح لنا بدمج الهامش الحدود في العرض والارتفاع الإجمالي لعنصر ما
+content-box (هي القيمة الافتراضية)
+-------------------------------------------------------------------------------
+clip-path:                              تُستخدم لقص أو قطع جزء معين من العنصر
+          وبالتالي تمكنك من عرض محتوى محدد فقط من العنصر وإخفاء بقية الجزء    
+-------------------------------------------------------------------------------
+polygon()                           تقوم بتحديد مضلع بناءً على النقاط المحددة
+circle()                                                    تقوم بتحديد دائرة
+clip-path: circle(50% at 50% 50%);                           دائرة في المنتصف 
+*/
+
+div{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+#div1{
+    background-color: rgb(255, 87, 87);
+    clip-path: circle(53% at 100% 0%);
+}
+#div2{
+    background-color: rgb(50, 50, 50);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#div3{
+    background-color: rgb(236, 236, 236);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);}
+
+</style>      
+</head>
+<body>
+    <div id="div1">1</div>
+    <div id="div2">2</div>
+    <div id="div3">3</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

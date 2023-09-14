@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style HTML Elements With Specific Attributes</title>
+
+<style>
+/*  
+HTML attributes               خصائص التي يمكنك وضعها للعناصر اتش تي ام ال 
+Attributes                                              صفات | خصائص | سمات 
+---------------------------------------------------------------------------- 
+[attribute]:                                  يختار العناصر بخاصية المحددة
+ Selects elements with a specified attribute.
+ ---------------------------------------------------------------------------
+[attribute="value"]:                   يختار العناصر بخاصية وقيمة معينتين
+ Selects elements with a specified attribute and value.
+----------------------------------------------------------------------------
+ */
+img[width]{
+    border-bottom: 4px solid  rgb(255, 91, 91);
+}
+img[width="100%"]{
+    height: 250px;
+    object-fit: cover;
+}
+/*[attribute^="value"]:   يختار العناصر التي تبدأ قيمتها بقيمة معينة    
+Selects elements whose attribute value starts with a specific value.
+----------------------------------------------------------------------------
+[attribute$="value"]:        يختار العناصر التي تنتهي قيمتها بقيمة معينة   
+Selects elements whose attribute value ends with a specific value.
+----------------------------------------------------------------------------
+[attribute*="value"]: يختار العناصر التي تحتوي قيمة السمة على قيمة معينة
+Selects elements whose attribute value contains a specific value. 
+----------------------------------------------------------------------------
+[attribute|="value"]:         (-) يختار العناصر بقيمة معينة أو تليها علامة 
+Selects elements whose attribute value is either the specified value 
+                or starts with the specified value followed by a hyphen.
+-----------------------------------------------------------------------------
+[attribute~="value"]:يختار العناصر التي تحتوي قيمة الخاصية على كلمة معينة
+Selects elements whose attribute value contains a specific word.
+ */
+ /* a:not([href^="http"]){
+    color: rgb(255, 83, 83); font-size: 25px;
+} */
+a[href^="http"]{
+    color: rgb(255, 83, 83); font-size: 25px;
+}
+a[href*="index"]{
+    color: rgb(55, 55, 55); font-size: 25px;
+}
+[class~="Link"]{
+    padding: 15px;
+}
+/* :not([class~="Link"]){
+    padding: 15px;
+} */
+
+</style>      
+</head>
+<body>
+    <img src="programmer.avif" width="100%">
+    <img src="img.jpg" width="100%">
+    <!-- <video src="" width="100%"></video> -->
+    <a class="Link Online" href="http://codershiyar.com">رابط خارجي</a>
+    <a class="Link Offline" href="index.html">رابط داخلي</a>
+    
+</body>
+</html>
+
+
+
+
+
+
+

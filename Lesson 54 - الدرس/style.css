@@ -1,0 +1,56 @@
+input{
+    box-sizing: border-box;
+    padding: 10px; width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none; margin-top: 15px;
+    border: 0px;
+    border-bottom: 3px solid #5578d8;
+}
+input:valid{
+    border-bottom: 3px solid green;
+    background: url(correct-mark.png) 3% no-repeat;
+    background-size: 30px;
+}
+
+input[type=submit]{
+    background: #224194;
+    color: white;
+}
+input[type=submit]:hover{
+    background: #5578d8;
+}
+a,label{
+    padding: 15px;
+    font-size: 20px;
+    color: #434343;
+    font-weight: bolder;
+}
+a{
+    display: block;
+}
+input[type="radio"] {
+    appearance: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #5578d8;
+    background: white;
+}
+input[type="radio"]:checked{
+    background: #224194;
+}
+
+@media screen and (min-width:720px){
+   body{
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Verticaal centreren */
+        min-height: 100vh;
+   }
+   header{
+    border-right: 8px solid #5578d8; 
+    margin-right: 10px;
+   }
+}

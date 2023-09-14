@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS in Arabic With Coder Shiyar</title>
+<style>
+
+
+/*   
+:valid                         صالح: لتحديد عناصر تم ملئ بياناته بشكل صحيح
+:invalid               غير صالح: لتحديد عناصر تم ملئ بياناته بشكل غير صحيح
+:required                إجباري: تستخدم لتحديد عناصر ملىء بياناتها إجبارية
+    (Form elements: <input>,<textarea>,<select>) 
+------------------------------------------------------------------------------
+:checked                              (محددة)تم تحديده: لتحديد عناصر مختارة
+    (input: checkbox, radio )
+------------------------------------------------------------------------------
+:disabled معطل:يُستخدم لتحديد العناصر التي تم تعطيلها ولا يمكن التفاعل معها
+:enabled                مفعل: يُستخدم لتحديد العناصر التي يُمكن التفاعل معها 
+ (<input>,<textarea>,<select>,<button>,<option>) 
+------------------------------------------------------------------------------    
+:focus           تركيز: لتحديد العنصر الذي تم التركيز عليه من قبل المستخدم
+    (<input>,<button>,<textarea>,<select>) 
+*/
+
+/* input:enabled{
+    background: rgb(45, 45, 45);
+} */
+
+/* input:required{
+    background: rgb(255, 138, 138);
+}
+input:checked{
+    width: 50px;
+    height: 50px;
+}
+input:focus{
+    transform: scale(1.1);
+} */
+
+
+input{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none; margin-top: 15px;
+    border: 0px;
+    border-bottom: 3px solid #5578d8;
+}
+input:valid{
+    border-bottom: 3px solid green;
+    background: url(correct-mark.png) 97% no-repeat;
+    background-size: 30px;
+}
+/* input:invalid {
+    border-bottom: 3px solid red;
+    background: url(incorrect-mark.png) 97% no-repeat;
+    background-size: 30px;
+} */
+input[type=submit]{
+    background: #224194;
+    color: white;
+}input[type=submit]:hover{
+    background: #5578d8;
+}
+
+@media screen and (min-width:720px){
+   body{
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Verticaal centreren */
+        min-height: 100vh;
+   }
+   header{
+    border-right: 8px solid #5578d8; 
+    margin-right: 10px;
+   }
+}
+</style>      
+</head>
+<body>
+    <header>
+        <img src="programmer.avif" width="100%">
+    </header>
+    <form>
+            <input type="email" required name="email"  placeholder="Type in your email..."/>
+            <input type="password" required name="password"  placeholder="Type in your password..."/>
+            <input type="submit" value="Login">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
