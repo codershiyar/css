@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coder Shiyar</title>
+    <title>Learn CSS 2D Transform</title>
+<style>
+/* 
+translate(valueX,valueY): تقوم بتحريك العنصر في اتجاهات محددة 
+translateX(Number):         يقوم بتحريك العنصر على محور الأفقي
+translateY(Number):        يقوم بتحريك العنصر على محور الرأسي 
+----------------------------------------------------------------
+rotate(1turn):                            يستخدم لدوران العنصر 
+----------------------------------------------------------------
+scaleX(Number):         يقوم بتغيير حجم العنصر على محور الأفقي
+scaleY(Number):        يقوم بتغيير حجم العنصر على محور الرأسي
+scale(Number):                تغيير حجم العنصر على كلا المحاور
+----------------------------------------------------------------
+skewX(angle):        يميل العنصر على محور الأفقي  بزاوية محددة
+skewY(angle):        يميل العنصر على محور الرأسي بزاوية محددة
+skew(x-angle,y-angle):              يميل العنصر على كلا المحاور
+----------------------------------------------------------------
+angle = زاوية     turn = استدار/دور    transform =  تغير|تحويل
+*/
+
+header{
+    background-color: rgb(255, 165, 165);
+    text-align: center;
+    height: 90px;
+} header img{
+    width: 170px;
+    transform: translateY(40px) skew(-1deg);
+    border-radius: 10px;
+}
+.rotate-img{
+    width: 90px;
+    transform: rotate(0.5turn) scale(95%);
+}
+
+
+</style>      
 </head>
 <body>
+    <header>
+        <img src="img.jpg" />
+    </header>
+    <img class="rotate-img" src="css.jpg" />
 
-    <img src="img.png" width="300" style="transform: scale(-1);"/>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
